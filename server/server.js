@@ -141,7 +141,7 @@ if (hostname) {
     log.info("server", "Custom hostname: " + hostname);
 }
 
-const port = 443;
+const port = config.port;
 
 const disableFrameSameOrigin =
     !!process.env.UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN || args["disable-frame-sameorigin"] || false;
